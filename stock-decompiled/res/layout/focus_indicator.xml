@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hodafone.camera.ui.commonui.FocusIndicatorRotateLayout android:id="@id/focus_indicator_rotate_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/focus_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/focus_center_shutter" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/focus_icon_center_shutter" />
+    </FrameLayout>
+</com.hodafone.camera.ui.commonui.FocusIndicatorRotateLayout>

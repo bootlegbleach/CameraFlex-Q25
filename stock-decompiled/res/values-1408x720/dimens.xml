@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_fragment_height">169.0dip</dimen>
+    <dimen name="bottom_mode_height">66.0dip</dimen>
+    <dimen name="bottom_mode_ui_high_light_padding_top">16.0dip</dimen>
+    <dimen name="preview_margin_bottom_16_9">77.0dip</dimen>
+    <dimen name="preview_margin_bottom_1_1">279.0dip</dimen>
+    <dimen name="preview_margin_bottom_4_3">235.0dip</dimen>
+    <dimen name="reuse_tip_margin_bottom">237.0dip</dimen>
+    <dimen name="shutter_button_group_margin_bottom">76.0dip</dimen>
+    <dimen name="video_16v9_on_19v9screen_margin_bottom">76.0dip</dimen>
+    <dimen name="video_review_buttons_margin_bottom">86.0dip</dimen>
+</resources>

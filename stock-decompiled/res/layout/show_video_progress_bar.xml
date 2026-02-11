@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hodafone.camera.ui.commonui.SimpleLinearProgressBar android:id="@id/recording_progressbar" android:background="@color/video_progressbar_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:foreground="@color/video_progressbar_progress_color" android:max="300" android:progress="0" android:progressDrawable="@drawable/video_progressbar_progress" app:layout_constraintTop_toBottomOf="@id/camera_top_bar_main_menu" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

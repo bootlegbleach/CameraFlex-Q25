@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/recycler_view_camera_fun_effect" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/camera_fun_recyclerview_container_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

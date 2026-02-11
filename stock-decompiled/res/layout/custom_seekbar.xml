@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/common_seekbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/common_seekbar_text_size" android:textColor="#ffffffff" android:gravity="end|center" android:id="@id/title_text_view" android:layout_width="82.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_marginEnd="14.0dip" />
+    <SeekBar android:id="@id/seek_bar" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxHeight="2.0dip" android:max="100" android:progressDrawable="@drawable/facebeauty_seekbar_progress" android:thumb="@drawable/slider" android:thumbOffset="5.0dip" android:layout_weight="1.0" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/progress_value_view" android:layout_width="96.0dip" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/common_seekbar_text_size" android:textColor="#ffffffff" android:gravity="start|center" android:id="@id/value_text_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="+0" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="14.0dip" />
+        <View android:id="@id/hold_place" android:layout_width="@dimen/custom_facebeauty_switch_width" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

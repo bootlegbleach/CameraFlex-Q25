@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_camera_front" android:enabled="true" android:shortcutId="frontcamera" android:shortcutShortLabel="@string/shutcauts_frontcamera" android:shortcutLongLabel="@string/shutcauts_frontcamera" android:shortcutDisabledMessage="@string/shutcauts_frontcamera">
+        <intent android:targetPackage="com.hodafone.camera" android:action="android.media.action.SHORTCUT_CAMERA" android:targetClass="com.hodafone.camera.activity.CameraShortCutActivity">
+            <extra android:name="android.intent.extras.CAMERA_FACING" android:value="1" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_camera_rear" android:enabled="true" android:shortcutId="backcamera" android:shortcutShortLabel="@string/shutcauts_backcamera" android:shortcutLongLabel="@string/shutcauts_backcamera" android:shortcutDisabledMessage="@string/shutcauts_backcamera">
+        <intent android:targetPackage="com.hodafone.camera" android:action="android.media.action.SHORTCUT_CAMERA" android:targetClass="com.hodafone.camera.activity.CameraShortCutActivity">
+            <extra android:name="android.intent.extras.CAMERA_FACING" android:value="0" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_camera_video_front" android:enabled="true" android:shortcutId="frontvideo" android:shortcutShortLabel="@string/shutcauts_frontvideo" android:shortcutLongLabel="@string/shutcauts_frontvideo" android:shortcutDisabledMessage="@string/shutcauts_frontvideo">
+        <intent android:targetPackage="com.hodafone.camera" android:action="android.media.action.SHORTCUT_CAMERA" android:targetClass="com.hodafone.camera.activity.CameraShortCutActivity">
+            <extra android:name="android.intent.extras.CAMERA_FACING" android:value="1" />
+            <extra android:name="android.intent.extras.CAMERA_SUB_MODE" android:value="video" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_camera_video_rear" android:enabled="true" android:shortcutId="backvideo" android:shortcutShortLabel="@string/shutcauts_backvideo" android:shortcutLongLabel="@string/shutcauts_backvideo" android:shortcutDisabledMessage="@string/shutcauts_backvideo">
+        <intent android:targetPackage="com.hodafone.camera" android:action="android.media.action.SHORTCUT_CAMERA" android:targetClass="com.hodafone.camera.activity.CameraShortCutActivity">
+            <extra android:name="android.intent.extras.CAMERA_FACING" android:value="0" />
+            <extra android:name="android.intent.extras.CAMERA_SUB_MODE" android:value="video" />
+        </intent>
+    </shortcut>
+</shortcuts>

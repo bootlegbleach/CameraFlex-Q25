@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_switch_to_video">വീഡിയോ</string>
+    <string name="front_face_detected_first_tip">മികച്ച സെൽഫികൾക്കായി ലെൻസ് നോക്കുക</string>
+    <string name="mode_title">മോഡുകൾ</string>
+    <string name="portrait_custom_info">മങ്ങൽ</string>
+    <string name="pref_camera_picturesize_title">ചിത്ര വലുപ്പം</string>
+    <string name="pref_camera_record_location_title">ജിയോ ടാഗിംഗ്</string>
+    <string name="pref_pic_struct_title">ചിത്ര ഗൈഡ്</string>
+    <string name="pref_restore_detail">സ്വതവേയുള്ളതു് പുനഃസ്ഥാപിക്കുക</string>
+    <string name="pref_shutter_watermark_title">വാട്ടർ മാർക്ക്</string>
+    <string name="radio_switch_to_camera">ഫോട്ടോ</string>
+    <string name="radio_switch_to_dual_bokeh">ബോക്കെ</string>
+    <string name="setting_title">ക്രമീകരണങ്ങൾ</string>
+    <string name="toast_dual_camera_bokeh">2 മീറ്ററിനുള്ളിൽ ഷൂട്ടിംഗ് തുടരുക</string>
+</resources>

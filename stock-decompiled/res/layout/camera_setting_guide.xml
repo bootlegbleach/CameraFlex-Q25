@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/guide_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textColor="#ff02b3aa" android:id="@id/bnt_skip_setting_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="130.0dip" android:text="@string/skip_setting_guide" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:gravity="center" android:id="@id/guide_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:text="@string/setting_guide_message" android:layout_above="@id/bnt_skip_setting_guide" android:layout_centerHorizontal="true" />
+</RelativeLayout>

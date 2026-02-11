@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources configVersion="1.0.0.0" module="platform" requirementsVersion="0.1">
+    <feature id="FEATURE_MEDIA_CAMERA_ARC_HDR_SUPPORTED" title="虹软hdr">
+        <bool name="FEATURE_MEDIA_CAMERA_ARC_HDR_SUPPORTED" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_AUTO_BEST_SHOT" title="多帧优选功能">
+        <bool name="FEATURE_MEDIA_AUTO_BEST_SHOT" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_CAMERA_BEAUTYVIDEO_SUPPORTED" title="视频美颜模式">
+        <bool name="FEATURE_MEDIA_CAMERA_BEAUTYVIDEO_SUPPORTED" value="true"></bool>
+    </feature>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hodafone.camera.ui.commonui.MyPreferenceRotateLayout android:id="@id/video_beauty_switch_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/focal_switch_margin_bottom" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/video_beauty_switch_margin_start">
+        <TextView android:textSize="@dimen/video_beauty_switch_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/video_beauty_switch" android:layout_width="wrap_content" android:layout_height="@dimen/video_beauty_switch_height" android:singleLine="true" android:drawablePadding="@dimen/video_beauty_switch_drawable_padding" android:drawableStart="@drawable/video_beauty_icon" android:paddingStart="@dimen/video_beauty_switch_padding_start" android:paddingEnd="@dimen/video_beauty_switch_padding_end" />
+    </com.hodafone.camera.ui.commonui.MyPreferenceRotateLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hodafone.camera.ui.commonui.RotateLayout android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="186.0dip">
+        <TextView android:id="@id/num" style="@style/ContinuousShotText" />
+    </com.hodafone.camera.ui.commonui.RotateLayout>
+</FrameLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources module="platform" configVersion="1.0.0.0" requirementsVersion="0.1">
+    <feature id="FEATURE_MEDIA_CAMERA_NIGHTSHOT_SUPPORTED" title="夜景">
+        <bool name="FEATURE_MEDIA_CAMERA_NIGHTSHOT_SUPPORTED" value="false"></bool>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_CAMERA_SLOWMOTION_MODE_SUPPORTED" title="慢动作">
+        <bool name="FEATURE_MEDIA_CAMERA_SLOWMOTION_MODE_SUPPORTED" value="false"></bool>
+    </feature>
+
+    <feature id="FEATURE_CAMERA_ASD_DETECT" title="ASD">
+        <bool name="FEATURE_CAMERA_ASD_DETECT" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_HDR_AUTO" title="HDR Auto">
+        <bool name="FEATURE_HDR_AUTO" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_PLATFORM_AUTO_BEST_SHOT" title="平台多帧优选/降噪">
+        <bool name="FEATURE_MEDIA_PLATFORM_AUTO_BEST_SHOT" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_CAMERA_ARC_HDR_SUPPORTED" title="ARC HDR">
+        <bool name="FEATURE_MEDIA_CAMERA_ARC_HDR_SUPPORTED" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_SOFT_LIGHT" title="柔光灯">
+        <bool name="FEATURE_MEDIA_SOFT_LIGHT" value="false"></bool>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_SCREEN_FLASH_SUPPORTED" title="Screen Flash">
+        <bool name="FEATURE_MEDIA_SCREEN_FLASH_SUPPORTED" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_CONTROL_LENS_SWITCH" title="zoom多摄切换">
+        <bool name="FEATURE_CONTROL_LENS_SWITCH" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_CAMERA_ROLL" title="Camera Roll">
+        <string name="FEATURE_MEDIA_CAMERA_ROLL" value="true"></string>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_CAMERA_FACE_DETECT_PLUS_SUPPORTED" title="facePlus人脸检测">
+        <string name="FEATURE_MEDIA_CAMERA_FACE_DETECT_PLUS_SUPPORTED" value="false" />
+    </feature>
+
+    <feature id="FEATURE_CAPTURE_PREVIEW_THUMBNAIL" title="缩略图">
+        <string name="FEATURE_CAPTURE_PREVIEW_THUMBNAIL" value="true" />
+    </feature>
+
+    <feature id="FEATURE_LAYOUT_IN_DISPLAY_CUTOUT" title="无视刘海布局">
+        <bool name="FEATURE_LAYOUT_IN_DISPLAY_CUTOUT" value="true" />
+    </feature>
+
+    <feature id="PICTURE_SIZE_SUPPORT_19_5_9_RATIO" title="19.5:9 size">
+        <bool name="PICTURE_SIZE_SUPPORT_19_5_9_RATIO" value="true" />
+    </feature>
+
+ <!--录像质量默认值-->
+    <feature id="pref_video_quality_key" title="录像质量默认值">
+        <!--480p=4 720p=5 1080p=6-->
+        <string name="pref_video_quality_key" value="6" />
+    </feature>
+	
+    <feature id="pref_shutter_watermark_key" title="水印默认值">
+        <bool name="pref_shutter_watermark_key" value="on"></bool>
+    </feature>
+
+    <feature id="FEATURE_WATERMARK" title="水印">
+        <bool name="FEATURE_WATERMARK" value="time_location;ratio:0.3;pos:left;margin:0.02,0.00;model_name:RUNGRADO 3804"></bool>
+    </feature>
+
+    <feature id="FEATURE_LOCAL_WATER" title="水印算法在app">
+        <bool name="FEATURE_LOCAL_WATER" value="true"></bool>
+    </feature>
+    
+    <feature id="FEATURE_MEDIA_CAMERA_PROFESSIONAL_MODE_SUPPORTED" title="专业">
+        <bool name="FEATURE_MEDIA_CAMERA_PROFESSIONAL_MODE_SUPPORTED" value="true"></bool>
+    </feature>
+    
+    <feature id="FEATURE_MEDIA_CAMERA_BEAUTYSHOT_SUPPORTED" title="美颜">
+        <bool name="FEATURE_MEDIA_CAMERA_BEAUTYSHOT_SUPPORTED" value="Default"></bool>
+    </feature>
+    
+    <feature id="FEATURE_MEDIA_PLATFORM_AUTO_BEST_SHOT" title="平台多帧优选/降噪">
+        <bool name="FEATURE_MEDIA_PLATFORM_AUTO_BEST_SHOT" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_PICTURE_STRUCT" title="网格线">
+        <bool name="FEATURE_PICTURE_STRUCT" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_CAMERA_SUPER_MACRO_MODE_SUPPORTED" title="微距">
+        <bool name="FEATURE_MEDIA_CAMERA_SUPER_MACRO_MODE_SUPPORTED" value="true"></bool>
+    </feature>
+    
+    <feature id="FEATURE_MEDIA_CAMERA_SUPER_MACRO_MODE_CAMERA_ID" title="微距ID">
+        <string name="FEATURE_MEDIA_CAMERA_SUPER_MACRO_MODE_CAMERA_ID" value="2"></string>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_CAMERA_PANORAMA_SUPPORTED" title="全景">
+        <bool name="FEATURE_MEDIA_CAMERA_PANORAMA_SUPPORTED" value="false"></bool>
+    </feature>
+
+    <feature id="PICTURE_SIZE_SUPPORT_1_1_RATIO" title="1:1">
+        <bool name="PICTURE_SIZE_SUPPORT_1_1_RATIO" value="false"></bool>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_CAMERA_DUAL_BOKEH_SUPPORTED" title="dual bokeh">
+        <bool name="FEATURE_MEDIA_CAMERA_DUAL_BOKEH_SUPPORTED" value="false"></bool>
+    </feature>
+
+    <feature id="FEATURE_MEDIA_CAMERA_NIGHTSHOT_SUPPORTED_FRONT" title="night shot">
+        <bool name="FEATURE_MEDIA_CAMERA_NIGHTSHOT_SUPPORTED_FRONT" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_ENABLE_LOG_EXTRA_MSG" title="log">
+        <bool name="FEATURE_ENABLE_LOG_EXTRA_MSG" value="true"></bool>
+    </feature>
+
+    <feature id="FEATURE_CAMERA_HDF_BLUR" title="blur">
+        <bool name="FEATURE_CAMERA_HDF_BLUR" value="false"></bool>
+    </feature>
+
+    <feature id="FEATURE_CAMERA_QRCODE" title="QR CODE">
+        <bool name="FEATURE_CAMERA_QRCODE" value="false"></bool>
+    </feature>
+
+ <!--
+    <feature id="FEATURE_EXIF_MAKER" title="制造商">
+        <string name="FEATURE_EXIF_MAKER" value="Android"></string>
+    </feature>
+
+    <feature id="FEATURE_EXIF_MODE" title="型号">
+        <string name="FEATURE_EXIF_MODE" value="Android"></string>
+    </feature>
+-->
+
+    <feature id="FEATURE_VIDEO_FPS_LIMIT" title="">
+        <string name="FEATURE_VIDEO_FPS_LIMIT" value="5,30,5,30"></string>
+    </feature>
+</resources>

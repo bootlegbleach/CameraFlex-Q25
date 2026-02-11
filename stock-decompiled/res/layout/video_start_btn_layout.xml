@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hodafone.camera.ui.commonui.ShutterButton android:id="@id/shutter_button_video_start" android:visibility="gone" android:layout_width="@dimen/video_shutter_button_size" android:layout_height="@dimen/video_shutter_button_size" android:src="@drawable/btn_video_start" app:layout_constraintBottom_toBottomOf="@id/bottom_line" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

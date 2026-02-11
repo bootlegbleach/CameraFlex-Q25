@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_fragment_height">118.0dip</dimen>
+    <dimen name="common_seekbar_height">42.0dip</dimen>
+    <dimen name="photo_shutter_button_size">60.0dip</dimen>
+    <dimen name="video_shutter_button_size">60.0dip</dimen>
+</resources>

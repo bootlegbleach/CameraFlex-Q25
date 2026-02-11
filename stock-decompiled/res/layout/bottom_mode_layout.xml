@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hodafone.camera.ui.uinode.BottomModeScrollView android:id="@id/bottom_horizon_scroll_view" android:background="@color/bottom_mode_background" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_mode_height" app:indicator_drawable="@drawable/mode_indicator_drawable" app:itemStyle="TEXT" app:layout_constraintBottom_toTopOf="@id/camera_bottom_ui"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

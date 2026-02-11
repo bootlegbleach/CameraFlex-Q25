@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hodafone.camera.ui.commonui.BottomFunctionButtonContainer android:id="@id/camera_bottom_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/camera_shutter" android:layout_width="fill_parent" android:layout_height="@dimen/modeui_bottom_height" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_shutter_group_height">
+            <com.hodafone.camera.ui.commonui.RotateImageView android:id="@id/btn_cancel" android:layout_width="@dimen/switch_camera_button_size" android:layout_height="@dimen/switch_camera_button_size" android:src="@drawable/btn_cancel" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bottom_bar_switch_thumb_margin_hor" android:layout_alignParentStart="true" style="@style/ShutterButton" />
+            <com.hodafone.camera.ui.commonui.ShutterButton android:id="@id/shutter_button_pause_resum" android:visibility="gone" android:layout_width="@dimen/switch_camera_button_size" android:layout_height="@dimen/switch_camera_button_size" android:src="@drawable/btn_video_pause" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bottom_bar_switch_thumb_margin_hor" android:layout_alignParentStart="true" />
+            <com.hodafone.camera.ui.commonui.ShutterButton android:id="@id/switch_camera_facing" android:layout_width="@dimen/switch_camera_button_size" android:layout_height="@dimen/switch_camera_button_size" android:src="@drawable/btn_switch_camera_facing" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/bottom_bar_switch_thumb_margin_hor" android:layout_alignParentEnd="true" />
+            <com.hodafone.camera.ui.commonui.ShutterButton android:id="@id/shutter_button_video_prepare" android:layout_width="@dimen/video_shutter_button_size" android:layout_height="@dimen/video_shutter_button_size" android:src="@drawable/btn_video_prepare" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/recording_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="38.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="16.0dip" android:textColor="@color/setting_item_text_color_normal" android:gravity="center" android:layout_gravity="center" android:id="@id/recording_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recording_time" android:maxLines="1" />
+    </LinearLayout>
+</com.hodafone.camera.ui.commonui.BottomFunctionButtonContainer>

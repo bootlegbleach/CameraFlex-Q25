@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_fragment_height">148.0dip</dimen>
+    <dimen name="photo_shutter_button_size">74.0dip</dimen>
+    <dimen name="video_shutter_button_size">74.0dip</dimen>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hodafone.camera.ui.commonui.PreviewFrameLayout android:id="@id/render_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/video_autozoom_stub" android:layout="@layout/video_autozoom_control" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.hodafone.camera.ui.commonui.FaceView android:id="@id/face_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.hodafone.camera.ui.commonui.FocusMeterView android:id="@id/render_layer_bottom" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="@dimen/focus_normal_width" android:layout_height="@dimen/focus_normal_width" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/focus_indicator" />
+        <include android:layout_width="@dimen/focus_normal_width" android:layout_height="@dimen/focus_normal_width" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/metering_indicator" />
+        <com.hodafone.camera.ui.commonui.ExposureView android:id="@id/focus_ev_layout" android:visibility="gone" android:layout_width="@dimen/exposure_view_width" android:layout_height="@dimen/exposure_view_height">
+            <ImageView android:layout_gravity="center" android:id="@id/focus_ev_bar" android:background="@drawable/focus_ev_scroll_bar" android:visibility="invisible" android:layout_width="@dimen/exposure_bar_width" android:layout_height="@dimen/exposure_bar_height" />
+            <ImageView android:layout_gravity="center" android:id="@id/focus_ev_tag" android:layout_width="@dimen/exposure_tag_size" android:layout_height="@dimen/exposure_tag_size" android:src="@drawable/focus_ev_scroll_tag" />
+        </com.hodafone.camera.ui.commonui.ExposureView>
+    </com.hodafone.camera.ui.commonui.FocusMeterView>
+    <FrameLayout android:id="@id/render_layer_middle" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/render_layer_top" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hodafone.camera.ui.commonui.RotateLayout android:layout_gravity="center" android:id="@id/zoom_info_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/zoom_info" style="@style/ZoomInfoText" />
+        </com.hodafone.camera.ui.commonui.RotateLayout>
+        <com.hodafone.camera.ui.commonui.CountDownView android:id="@id/count_down_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="326.0dip" />
+    </FrameLayout>
+    <View android:layout_gravity="left" android:id="@id/cover_top" android:background="@android:color/black" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+    <View android:layout_gravity="right" android:id="@id/cover_bottom" android:background="@android:color/black" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+</com.hodafone.camera.ui.commonui.PreviewFrameLayout>

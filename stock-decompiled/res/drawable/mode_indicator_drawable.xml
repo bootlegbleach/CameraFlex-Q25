@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/round_rect" android:left="@dimen/bottom_mode_ui_high_light_padding_left" android:top="@dimen/bottom_mode_ui_high_light_padding_top" android:right="@dimen/bottom_mode_ui_high_light_padding_left" android:bottom="@dimen/bottom_mode_ui_high_light_padding_top">
+        <shape>
+            <solid android:color="#4dffffff" />
+            <corners android:radius="18.0dip" />
+        </shape>
+    </item>
+</layer-list>

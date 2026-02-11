@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:background="#ffff1493" android:layout_width="170.0dip" android:layout_height="1.0dip" />
+    <com.hodafone.camera.ui.commonui.RotateImageView android:layout_gravity="center" android:id="@id/activeline" android:layout_width="184.0dip" android:layout_height="184.0dip" android:src="@drawable/pic_level_active_line" />
+</FrameLayout>

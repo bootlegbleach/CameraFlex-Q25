@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="beauty_guide_top_text">Bei der Schönheit</string>
+    <string name="beauty_guide_top_text_description">Schalte die Schönheitsfunktion ein, um die Parameter nach deinem Gesicht einzustellen</string>
+    <string name="enable_sd_permission_content">Zeigen Sie Ihre Einstellungen an und erlauben Sie den Zugriff auf \"DCIM\" in \"SD-Karte\"</string>
+    <string name="enable_sd_permission_title">Die Kamera benötigt SD-Kartenzugriff</string>
+    <string name="faceplus_asd_tips_bankcard">Kreditkarte</string>
+    <string name="faceplus_asd_tips_bluesky">Himmel</string>
+    <string name="faceplus_asd_tips_businesscard">Visitenkarte</string>
+    <string name="faceplus_asd_tips_cat">Katze</string>
+    <string name="faceplus_asd_tips_dog">Hund</string>
+    <string name="faceplus_asd_tips_face">Porträt</string>
+    <string name="faceplus_asd_tips_flower">Blume</string>
+    <string name="faceplus_asd_tips_flowersea">Blumenmeer</string>
+    <string name="faceplus_asd_tips_food">Lebensmittel</string>
+    <string name="faceplus_asd_tips_fruits">Früchte</string>
+    <string name="faceplus_asd_tips_idcard">ICH WÜRDE</string>
+    <string name="faceplus_asd_tips_meadow">Wiese</string>
+    <string name="faceplus_asd_tips_night">Nacht</string>
+    <string name="faceplus_asd_tips_plants">Pflanze</string>
+    <string name="faceplus_asd_tips_qr">QR-Code</string>
+    <string name="faceplus_asd_tips_sandbeach">Sand</string>
+    <string name="faceplus_asd_tips_snow">Schnee</string>
+    <string name="faceplus_asd_tips_sunrise">Sonnenaufgang und Sonnenuntergang</string>
+    <string name="faceplus_asd_tips_whiteboard">Wandtafel</string>
+    <string name="micro_video_guide_content">Wenn Bewegungsfoto aktiviert ist, wird jedes Foto als Bewegungsfoto aufgezeichnet und die freigegebenen Fotos enthalten auch Bewegungsfotos.</string>
+    <string name="micro_video_guide_title">Bewegungsfoto</string>
+    <string name="radio_switch_to_dual_bokeh_for_odmw">künstlerische Unschärfe</string>
+    <string name="radio_switch_to_super_macro">Super-Makro</string>
+    <string name="super_macro_tip">Der optimale Aufnahmeabstand beträgt 4 cm</string>
+    <string name="switch_to_wide_lens_toast">offenes Weitwinkelobjektiv</string>
+    <string name="toast_face_undetected_at_sticker">Es wird kein Gesicht erfasst</string>
+    <string name="toast_landscape_open_wide_tips">Schalten Sie auf Superweitwinkel um, um noch mehr Landschaft oder Freunde zu erfassen.</string>
+    <string name="video_recording">Videoaufnahme</string>
+    <string name="zoom_guide_content">Vergrößern oder verkleinern Sie vertikal auf dem Bildschirm, um die Ansicht zu vergrössern oder zu verkleinern</string>
+    <string name="zoom_guide_title">Eine einfachere Möglichkeit zum zoomen</string>
+</resources>

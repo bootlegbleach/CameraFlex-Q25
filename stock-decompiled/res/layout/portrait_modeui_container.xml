@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hodafone.camera.ui.commonui.CustomSeekBar android:id="@id/portrait_container" android:layout_width="fill_parent" android:layout_height="@dimen/common_seekbar_height" hodafone:title_text="@string/portrait_custom_info"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:hodafone="http://schemas.android.com/apk/res-auto" />

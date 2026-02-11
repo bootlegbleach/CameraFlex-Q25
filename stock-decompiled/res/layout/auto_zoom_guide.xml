@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="248.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.36" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.25">
+        <ImageView android:id="@id/guide_image" android:layout_width="fill_parent" android:layout_height="168.0dip" android:src="@drawable/auto_zoom" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_auto_zoom_title" />
+            <TextView android:textSize="13.0dip" android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/guide_auto_zoom_rules" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textColor="#ff00beb4" android:id="@id/guide_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skip_setting_guide" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.95" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.75" style="?android:buttonBarButtonStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

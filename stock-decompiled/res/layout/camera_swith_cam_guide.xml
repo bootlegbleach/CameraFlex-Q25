@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#75000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="#cbffffff" android:id="@id/guide_top_text" android:layout_width="208.0dip" android:layout_height="wrap_content" android:layout_marginTop="114.0dip" android:text="@string/guide_top" android:drawableTop="@drawable/guide_top" android:drawablePadding="9.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <Button android:textColor="#ff00beb4" android:id="@id/btn_skip_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="226.0dip" android:text="@string/skip_setting_guide" android:layout_marginEnd="24.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" style="?android:buttonBarButtonStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

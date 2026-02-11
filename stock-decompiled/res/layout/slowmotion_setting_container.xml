@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hodafone.camera.ui.commonui.VideoBottomSettingLayout android:gravity="center" android:orientation="vertical" android:id="@id/slowmotion_setting_container" android:layout_width="fill_parent" android:layout_height="@dimen/camera_mode_bar_height"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.hodafone.camera.ui.commonui.ModePickGridView android:gravity="center" android:layout_gravity="center" android:id="@id/timelapse_settingList" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="270.0dip" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:horizontalSpacing="20.0dip" android:verticalSpacing="0.0dip" android:numColumns="3" />
+    </com.hodafone.camera.ui.commonui.VideoBottomSettingLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hodafone.camera.ui.commonui.PanoramaView android:id="@id/pano_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/panorama_indicator_margin_hor"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/pano_preview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pano_preview_margin_bottom" android:layout_alignParentBottom="true" android:contentDescription="@string/panorama_arcsoft_switch_capture_direction_guide">
+        <ImageView android:layout_gravity="start" android:id="@id/pano_preview" android:padding="@dimen/progress_indicator_bound_width" android:visibility="invisible" android:layout_width="@dimen/panorama_indicator_width" android:layout_height="@dimen/panorama_indicator_height" android:scaleType="fitXY" />
+    </FrameLayout>
+    <ImageView android:id="@id/prompt_bound_view" android:visibility="invisible" android:layout_width="@dimen/panorama_indicator_width" android:layout_height="@dimen/panorama_indicator_height" android:src="@drawable/offset_indicator" android:scaleType="fitXY" android:layout_alignTop="@id/pano_preview_layout" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/arrow_view" android:visibility="invisible" android:layout_width="@dimen/panorama_arrow_size" android:layout_height="@dimen/panorama_arrow_size" android:src="@drawable/arrows_right" android:layout_alignTop="@id/pano_preview_layout" android:layout_alignBottom="@id/pano_preview_layout" android:layout_marginStart="@dimen/panorama_arrow_margin_hor" android:layout_toEndOf="@id/prompt_bound_view" />
+</com.hodafone.camera.ui.commonui.PanoramaView>

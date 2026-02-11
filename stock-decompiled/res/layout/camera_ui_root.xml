@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/camera_ui_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:hodafone="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/camera_bottom_ui" layout="@layout/bottom_fragment_layout" />
+    <include android:id="@id/bottom_horizon_scroll_view" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_mode_height" hodafone:layout_constraintBottom_toTopOf="@id/camera_bottom_ui" hodafone:layout_constraintEnd_toEndOf="parent" hodafone:layout_constraintStart_toStartOf="parent" layout="@layout/bottom_mode_layout" />
+    <include android:id="@id/mode_ui_root" android:layout_width="fill_parent" android:layout_height="wrap_content" hodafone:layout_constraintBottom_toTopOf="@id/bottom_horizon_scroll_view" hodafone:layout_constraintEnd_toEndOf="parent" hodafone:layout_constraintStart_toStartOf="parent" layout="@layout/mode_ui_layout" />
+    <android.widget.Space android:id="@id/preview_top_space" android:layout_width="fill_parent" android:layout_height="0.0dip" hodafone:layout_constraintBottom_toTopOf="@id/preview_space" hodafone:layout_constraintTop_toTopOf="parent" />
+    <android.widget.Space android:id="@id/preview_space" android:layout_width="fill_parent" android:layout_height="fill_parent" hodafone:layout_constraintTop_toTopOf="parent" />
+    <ViewStub android:id="@id/reuse_tip_view_stub" android:layout="@layout/camera_reuse_tip" android:layout_width="fill_parent" android:layout_height="0.0dip" hodafone:layout_constraintBottom_toTopOf="@id/bottom_barrier" hodafone:layout_constraintTop_toBottomOf="@id/top_barrier" />
+    <android.widget.Space android:id="@id/preview_bottom_space" android:layout_width="fill_parent" android:layout_height="0.0dip" hodafone:layout_constraintBottom_toBottomOf="parent" hodafone:layout_constraintTop_toBottomOf="@id/preview_space" />
+    <include android:id="@id/camera_top_bar" layout="@layout/top_bar_layout" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/bottom_barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" hodafone:barrierDirection="top" hodafone:constraint_referenced_ids="mode_ui_root,preview_bottom_space" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/top_barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" hodafone:barrierDirection="bottom" hodafone:constraint_referenced_ids="preview_top_space,camera_top_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

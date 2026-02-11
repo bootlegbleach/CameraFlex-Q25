@@ -1,0 +1,38 @@
+version: 2.9.3
+apkFileName: StockCamera.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 29
+  targetSdkVersion: 30
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 1108062
+  versionName: 11.0.80.62
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  com/robotium/solo/RobotiumWeb.js: 8
+doNotCompress:
+- classes.dex
+- resources.arsc
+- lib/arm64-v8a/libPluginManagerJni.so
+- lib/arm64-v8a/libplugincommon.so
+- lib/arm64-v8a/libwatermark.so
+- lib/armeabi-v7a/libPluginManagerJni.so
+- lib/armeabi-v7a/libplugincommon.so
+- lib/armeabi-v7a/libwatermark.so
+- png
+- jpg
+- ogg
+- res/raw/dense_model.pack
+- res/raw/detect_model.pack
+- res/raw/megviifacepp_model
+- res/raw/mgbeautify_1_2_4_model
+- wav

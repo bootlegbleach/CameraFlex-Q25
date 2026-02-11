@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hodafone.camera.ui.commonui.BottomFunctionButtonContainer android:id="@id/camera_bottom_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/camera_shutter" android:layout_width="fill_parent" android:layout_height="@dimen/modeui_bottom_height" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_shutter_group_height">
+            <com.hodafone.camera.ui.commonui.ShutterButton android:id="@id/shutter_button_photo" android:layout_width="@dimen/photo_shutter_button_size" android:layout_height="@dimen/photo_shutter_button_size" android:src="@drawable/btn_photo" android:layout_centerHorizontal="true" />
+            <com.hodafone.camera.ui.commonui.ShutterButton android:id="@id/switch_camera_facing" android:layout_width="@dimen/switch_camera_button_size" android:layout_height="@dimen/switch_camera_button_size" android:src="@drawable/btn_switch_camera_facing" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/bottom_bar_switch_thumb_margin_hor" android:layout_alignParentEnd="true" />
+            <com.hodafone.camera.ui.commonui.RotateImageView android:id="@id/btn_cancel" android:layout_width="@dimen/switch_camera_button_size" android:layout_height="@dimen/switch_camera_button_size" android:src="@drawable/btn_cancel" android:layout_centerVertical="true" android:layout_marginStart="@dimen/bottom_bar_switch_thumb_margin_hor" android:layout_alignParentStart="true" style="@style/ShutterButton" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.hodafone.camera.ui.commonui.RotateImageView android:id="@id/little_i_indicator" android:focusable="true" android:visibility="gone" android:clickable="true" android:src="@drawable/little_i_button" android:scaleType="center" style="@style/LittleIIndicator" />
+</com.hodafone.camera.ui.commonui.BottomFunctionButtonContainer>

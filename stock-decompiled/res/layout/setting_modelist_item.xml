@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hodafone.camera.ui.commonui.AnimateRotateLayout android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="85.0dip" android:layout_marginBottom="2.0dip" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mode_setting_item" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no">
+        <ImageButton android:id="@id/icon" android:background="@android:color/transparent" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="@color/modes_item_text_color" android:gravity="center" android:id="@id/title" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/icon" android:importantForAccessibility="no" android:fontFamily="sans-serif-condensed" style="@style/MainSettingItemTitle" />
+    </RelativeLayout>
+</com.hodafone.camera.ui.commonui.AnimateRotateLayout>

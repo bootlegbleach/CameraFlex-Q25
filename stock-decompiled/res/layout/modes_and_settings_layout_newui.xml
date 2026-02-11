@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/mode_and_settings_main_container" android:background="@color/bottom_mode_background" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="170.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hodafone.camera.ui.settingsui.SettingsLevel2Layout android:id="@id/settings_level2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/mode_and_settings_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout android:id="@id/mode_and_settings_tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/modes_and_settings_tabs_height" />
+        <com.hodafone.camera.ui.settingsui.ModesAndSettingsViewPager android:id="@id/mode_and_settings_viewpager" android:layout_width="fill_parent" android:layout_height="@dimen/top_settings_viewpage_height" />
+        <TextView android:id="@id/mode_and_settings_text_version_code" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</FrameLayout>

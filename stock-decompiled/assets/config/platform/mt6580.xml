@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources configVersion="1.0.0.0" module="platform" requirementsVersion="0.1">
+    <feature id="FEATURE_PREVIEW_PORTRAIT" title="人像实时预览">
+        <bool name="FEATURE_PREVIEW_PORTRAIT" value="false"></bool>
+    </feature>
+
+</resources>
