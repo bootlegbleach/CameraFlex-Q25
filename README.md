@@ -35,6 +35,9 @@ Rule-of-thirds gridlines display correctly within the pillarboxed preview area f
 
 ## Known Limitations
 
+### Potenrially only works with the current latest build Q25_20.01.2026 build (Investigating)
+This was built off of the camera app that is inculded in the Q25_20.01.2026 build which had changes from previous builds, some users on older build have reported issues with the app hanging on startup
+
 ### Preview Zoom Mismatch (Hardware Limitation)
 In 4:3 and 16:9 modes, the preview shows approximately **13% less** than what the final captured image contains. This is a **MediaTek HAL limitation** that cannot be fixed at the app level:
 
