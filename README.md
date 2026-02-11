@@ -111,7 +111,7 @@ Contributions are welcome! Some areas that could use improvement:
 
 ## Credits
 
-- Original Camera Flex app by Hodafone
+- Original Camera Flex app by Hodafone/Zinwa
 
 ## License
 
