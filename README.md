@@ -52,25 +52,69 @@ The focus indicator and face detection boxes are centered on the full 720x720 sc
 
 ## Technical Details - What Was Changed
 
-### Smali (Java bytecode)
-
-1. **`smali/com/hodafone/camera/ui/uinode/w.smali`** (CameraRenderUINode)
-   - Added pillarbox cover bar logic for 4:3 and 16:9 modes
-   - Cover bars use `layout_gravity="left"` and `layout_gravity="right"` with calculated widths
-   - Creates properly sized Rect for gridlines positioning in pillarboxed modes
-   - Gridlines margins applied both on aspect ratio change and on initial ImageView creation
-
-2. **`smali/com/hodafone/camera/h/w.smali`** (Settings Applier)
-   - Set default 4:3 resolution to 4608x3456 (16MP hardware max)
-   - Set default 16:9 resolution to 3840x2160 (8MP hardware max)
+### AndroidManifest.xml
+- Package name: `com.hodafone.camera` → `com.hodafone.camera.flex`
+- App label: `@string/app_name` → `Camera Flex`
+- `extractNativeLibs`: `false` → `true`
+- Provider/activity authorities updated to use `.flex` suffix
+- **Why:** So it installs as a separate app, not replacing the stock camera
 
 ### Resources
 
-1. **`res/xml/camera_preferences_global.xml`**
-   - Changed default aspect ratio from `1:1` to `4:3`
+1. **`res/layout/pic_struct.xml`**
+   - ImageView dimensions: `fill_parent` → `wrap_content`
+   - **Why:** Allows gridlines to be positioned with margins for pillarboxed modes
 
-2. **`res/layout/pic_struct.xml`**
-   - Changed gridlines ImageView from `fill_parent` to `wrap_content` for proper margin-based positioning
+2. **`res/layout/render_ui_node.xml`**
+   - Cover bars changed from top/bottom (letterboxing) to left/right (pillarboxing)
+   - `layout_gravity`: `top`/`bottom` → `left`/`right`
+   - Dimensions: width/height swapped
+   - **Why:** Square screen needs side bars for portrait aspect ratios, not top/bottom bars
+
+3. **`res/values/arrays.xml`**
+   - Added resolution options for 1:1, 4:3, and 16:9 sizes (720x720, 4608x3456, 3840x2160, etc.)
+   - Added aspect ratio icons
+   - **Why:** Enable the new aspect ratio options with proper resolution choices
+
+4. **`res/values/bools.xml`**
+   - `custom_resolution_supported`: `true` → `false`
+   - **Why:** Disable custom resolution to use our defined resolution lists
+
+### Smali (Java bytecode)
+
+1. **`smali/com/hodafone/camera/glui/h.smali`**
+   - Enabled aspect ratio clamping: `const/4 v0, 0x0` → `const/4 v0, 0x1`
+   - **Why:** Ensures preview scales correctly for non-square aspect ratios
+
+2. **`smali/com/hodafone/camera/h/d0.smali`**
+   - Changed resolution threshold from 1500000 to 500000
+   - Force-add 720x720 to 1:1 list if empty
+   - Removed some conditional checks
+   - **Why:** Ensure 1:1 mode has valid resolutions on this hardware
+
+3. **`smali/com/hodafone/camera/h/v.smali`**
+   - Forced a value to 1 (true): `move-result v0` → `const/4 v0, 0x1`
+   - **Why:** Enable a feature flag needed for aspect ratio support
+
+4. **`smali/com/hodafone/camera/h/w.smali`**
+   - Removed device-specific checks for "p311"
+   - Changed default 4:3 resolution: `1280x720`/`3200x2400` → `4608x3456` (16MP max)
+   - Changed default 16:9 resolution to `3840x2160` (8MP max)
+   - **Why:** Use maximum hardware quality for each aspect ratio
+
+5. **`smali/com/hodafone/camera/setting/preference/ListPreference.smali`**
+   - Added `1:1` to aspect ratio options set
+   - **Why:** Ensure 1:1 remains as an option alongside new ratios
+
+6. **`smali/com/hodafone/camera/ui/uinode/w.smali`**
+   - Increased `.locals` from 5 to 7 for additional registers
+   - Added gridlines margin logic on initial ImageView creation
+   - Added video mode detection to force 16:9
+   - Added aspect ratio detection (1:1, 4:3, 16:9)
+   - Added pillarbox bar width calculation (90px for 4:3, 157px for 16:9)
+   - Added cover bar visibility and sizing logic
+   - Added Rect creation for gridlines positioning
+   - **Why:** Main pillarboxing logic - calculates bar sizes and positions UI elements correctly for each aspect ratio
 
 ## Building
 
